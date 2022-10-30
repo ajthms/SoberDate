@@ -9,7 +9,6 @@ function formSubmit(event) {
     const diff = Math.floor((today - dateValue) / (1000*60*60*24))
     document.getElementById("results").innerHTML = `Great job, ${userName.value}`
     document.getElementById("date").innerHTML = `You've been sober for ${diff} days!`
-    console.log(diff)
 
 }
 
