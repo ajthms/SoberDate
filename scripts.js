@@ -12,4 +12,8 @@ function formSubmit(event) {
 
 }
 
+function myFunction() {
+    const definition = document.getElementById("myDIV");
+    definition.classList.toggle("hidden")
+  }
 //display div to user, user cant select future date, save to local state

@@ -6,24 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SoberDate</title>
+    
 </head>
 <body> 
-    <h1>Sober Date</h1>
-    <h2>Enter your name and Sober Date on the calendar below to find out how long you've been sober:</h2>
+    <h1>Sober Date
+    </h1>
+    <h2>Enter your name and Sober Date on the calendar below <br>
+        to find out how long you've been sober:</h2>
     <form onsubmit="formSubmit(event)">
         <label for="userName">Name:</label>
         <input type="text" id="userName" name="userName"><br>
-        <input type="date" id="userDate" onchange="getDate()"><br>
+        <input type="date" id="userDate"><br>
         <input type="submit" value="Submit">
       </form>
-     
-    <br>
-
-    
-    <h4 id="results">
+     <br>
+     <h4 id="results">
         
     </h4>
 <div id="date"></div>
+<br>
+      <button class="button" onclick="myFunction()">What is Addiction?</button>
+
+<div class="hidden" id="myDIV">
+    Addiction is a treatable, chronic medical disease involving <br>
+    complex interactions among brain circuits, genetics, the environment, <br>
+    and an individual’s life experiences.
+</div>
+    <br>
+    <img src="https://images.unsplash.com/photo-1509675526962-8b983e25258e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=3087&q=80" alt="3D HTML" width="350" height="350">
     
     <script src="scripts.js"></script>
 </body>
