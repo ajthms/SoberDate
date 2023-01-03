@@ -3,12 +3,13 @@
 }
 
 body {
-    margin: 0;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    min-height: 100vh;
-    background-color: rgb(146, 146, 240);
-    height: 300px;
+  background-image: url('BACKGROUND.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
 }
 .content{
     display: flex;
@@ -20,30 +21,25 @@ body {
 h1 {
     
    text-transform: uppercase;
-  background-image: linear-gradient(
-    -225deg,
-    #231557 0%,
-    #44107a 29%,
-    #ff1361 67%,
-    #fff800 100%
-  );
   background-size: auto auto;
   background-clip: border-box;
   background-size: 200% auto;
-  color: #fff;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
+  color: #16122D;
   display: inline-block;
-      font-size: 50px;
-      
+  font-size: 50px;
+  animation: ani2 2s ease-out .5s forwards, ani6 2s ease-out .5s forwards;
+  opacity: 0;
 }
-@keyframes textclip {
-    to {
-      background-position: 200% center;
-    }
-  }
+
+.addiction {
+  font-size: 23px;
+  text-align: justify;
+  text-align: center;
+  max-width: 500px;
+  animation: ani2 2s ease-out 1s forwards, ani4 2s ease-out 1s forwards;
+  opacity: 0;
+}
+
   @media only screen and (max-width: 1000px) {
     body {
       grid-template-columns: 1fr 1fr;
@@ -51,38 +47,79 @@ h1 {
       footer{
         display: none;
       }
+      .addiction {
+        font-size: 13px;
+        text-align: justify;
+        text-align: center;
+        max-width: 250px;
+      }
     }
   @media only screen and (max-width: 600px) {
     body {
         grid-template-columns: 1fr;
     }
-    img {
-        display:none
+    .addiction {
+      font-size: 13px;
+      text-align: justify;
+      text-align: center;
+      max-width: 250px;
     }
   }
-  button {
-    appearance:none;
-    -webkit-appearance:none;
-    padding:10px;
-    border:none;
-    background-color:#3F51B5;
-    color:rgb(188, 83, 83);
-    font-weight:600;
-    border-radius:5px;
-    width:100%;
-  
+
+  @keyframes ani2 {
+    100% {
+      opacity: 1;
+    }
   }
+
+  @keyframes ani3 {
+    0%{
+      transform:translateY(50px);
+    }
+    100% {
+      transform:translateY(0);
+    }
+  }  
+  
+  @keyframes ani4 {
+    0%{
+      transform:translateX(50px);
+    }
+    100% {
+      transform:translateX(0);
+    }
+  }  
+  
+  @keyframes ani5 {
+    0%{
+      transform:translateX(-50px);
+    }
+    100% {
+      transform:translateX(0);
+    }
+  }  
+
+  @keyframes ani6 {
+    0%{
+      transform:translateY(-50px);
+    }
+    100% {
+      transform:translateY(0);
+    }
+  } 
 
 form {
      display: flex;
      flex-direction: column;
     padding:10px;
     border:none;
-    background-color:#040f50;
+    background-color:rgb(15, 7, 59);
     color:#fff;
     font-weight:600;
     border-radius:5px;
     width: 160px;
+    animation: ani2 2s ease-out 1s forwards;
+  opacity: 0;
 }
 
 footer {
@@ -92,45 +129,38 @@ footer {
     justify-content: center;
     text-align: center;
     padding: 1rem;
-  font-family: 'Roboto', sans-serif;
-  font-size: 100px;
+  font-size: 80px;
+  -webkit-text-stroke: 1px rgb(170, 219, 243);
+  animation: ani2 2s ease-out .5s forwards, ani3 2s ease-out .5s forwards;
+  opacity: 0;
 }
 
 .hidden {
     display: none;
 }
-.button {
-    background-color: white; 
-    color: black; 
-    border: 2px solid #4CAF50;
-    width: 100px;
-    transition: all .3s ease-in-out;
-    cursor: pointer;
-  }
-  .button:hover {
-    background-color: #4CAF50;
-    color: white;
-    box-shadow: #ff1361;
-  }
-img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
- }
+
 input[type=submit] {
-    background-color: #04AA6D;
+    background-color: #2F7890;
     color: white;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     float: right;
+    animation: ani2 2s ease-out 1s forwards;
+  opacity: 0;
     }
     input[type=text] {
     padding:10px;
     border:0;
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
+    animation: ani2 2s ease-out 1s forwards;
+  opacity: 0;
     }
     h2 {
       font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      font-size: 25px;
+      animation: ani2 2s ease-out 1s forwards, ani5 2s ease-out 1s forwards;
+  opacity: 0;
     }
+

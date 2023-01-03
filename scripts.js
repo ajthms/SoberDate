@@ -1,6 +1,8 @@
 const today = new Date()
 const userDate = document.getElementById("userDate")
 const userName = document.getElementById("userName")
+localStorage.setItem('date', 'value');
+const value = localStorage.getItem('date');
 
 function formSubmit(event) {
     event.preventDefault()
@@ -16,4 +18,6 @@ function myFunction() {
     const definition = document.getElementById("myDIV");
     definition.classList.toggle("hidden")
   }
+
+  
 //display div to user, user cant select future date, save to local state
