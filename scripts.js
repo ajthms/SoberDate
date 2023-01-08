@@ -16,6 +16,10 @@ function formSubmit(event) {
     localStorage.setItem('userDate', userDate.value);
 }
 
+const calendar = document.getElementById("dateValue");
 
+calendar.addEventListener("click", (event) => {
+  calendar.style.display = "none";
+});
   
 //user cant select future date, click off calendar on click
