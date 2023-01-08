@@ -13,9 +13,28 @@
     
 </head>
 <body> 
-    <div class="hero">
-        <img src="erictest.jpg" alt="">
-        <div class="title">The Vibing With Sleezy Podcast</div>
+    <div class="content">
+        <h1>Sobriety Days Calculator</h1>
+        <h2>Enter your name and Sobriety Date on the calendar below <br>
+            to find out how long you've been sober:</h2>
+        <form onsubmit="formSubmit(event)">
+            <label for="userName">Name:</label>
+            <input type="text" id="userName" name="userName"><br>
+            <input type="date" id="userDate"><br>
+            <input type="submit" value="Submit">
+          </form>
+         <br>
+         <div class="lightbox">
+             <h4 id="results"></h4>
+        <div id="date">
+        </div>
+         </div>
+        <div class="addiction">
+            Addiction is a treatable, chronic medical disease involving
+            complex interactions among brain circuits, genetics, the environment,
+            and an individual’s life experiences.
+        </div>
+        <br>
     </div>
     <div class="text">
         <div class="glass">
